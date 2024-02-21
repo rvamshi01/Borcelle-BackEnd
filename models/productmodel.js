@@ -1,4 +1,4 @@
-const mongoose  = required("mongoose")
+const mongoose  = require("mongoose")
 const productmodel=mongoose.Schema({
     name:{type:String,required:true},
     description:{type:String,required:true},
