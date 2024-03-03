@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const connect=require("./dbConnection");
 connect();
-app.use(express.json())
+app.use(express.json());
 app.use(cors())
 app.use("/auth",require("./routes/Authentication"));
 app.use("/products",require("./routes/Products"));
